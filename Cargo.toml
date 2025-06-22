@@ -41,7 +41,7 @@ serde_yaml = "0.9"
 # Environment variables
 dotenv = "0.15"
 # Home directory
-dirs = "5.0"
+dirs = "6.0"
 
 [dev-dependencies]
 # Testing
