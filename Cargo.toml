@@ -1,13 +1,13 @@
 [package]
-name = "akamai-edgegrid"
+name = "edgegrid"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
-description = "Akamai EdgeGrid authentication for Rust"
+authors = ["Community Contributors"]
+description = "Community-maintained Akamai EdgeGrid authentication for Rust"
 license = "Apache-2.0"
-repository = "https://github.com/akamai/edgegrid-rust"
-keywords = ["akamai", "edgegrid", "authentication", "api"]
-categories = ["authentication", "web-programming"]
+repository = "https://github.com/acedergren/AkamaiOPEN-edgegrid-rust"
+keywords = ["akamai", "edgegrid", "authentication", "api", "http"]
+categories = ["authentication", "web-programming", "api-bindings"]
 
 [dependencies]
 # HTTP client

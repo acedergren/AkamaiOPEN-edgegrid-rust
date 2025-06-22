@@ -32,14 +32,14 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-akamai-edgegrid = "0.1.0"
+edgegrid = "0.1.0"
 tokio = { version = "1", features = ["full"] }
 ```
 
 ## Quick Start
 
 ```rust
-use akamai_edgegrid::EdgeGridClient;
+use edgegrid::EdgeGridClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -67,17 +67,17 @@ The library supports the standard Akamai `.edgerc` configuration file format:
 
 ```ini
 [default]
-client_secret = C113nt533KR3TN6N90yVuAgICxIRwsObLi0E67/N8eRN=
-host = akab-h05tnam3wl42son7nktnlnnx-kbob3i3v.luna.akamaiapis.net
-access_token = akab-acc35t0k3nodujqunph3w7hzp7-gtm6ij
-client_token = akab-c113ntt0k3n4qtari252bfyqjkq-kkeh5a
+client_secret = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
+host = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx.luna.akamaiapis.net
+access_token = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx
+client_token = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx
 max_body = 131072
 
 [staging]
-client_secret = C113nt533KR3TN6N90yVuAgICxIRwsObLi0E67/N8eRN=
-host = akab-staging.luna.akamaiapis.net
-access_token = akab-acc35t0k3nodujqunph3w7hzp7-gtm6ij
-client_token = akab-c113ntt0k3n4qtari252bfyqjkq-kkeh5a
+client_secret = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx=
+host = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx.staging.akamaiapis.net
+access_token = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx
+client_token = akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx
 ```
 
 ### Using Environment Variables
@@ -86,21 +86,22 @@ You can also configure the client using environment variables:
 
 ```bash
 # For default section
-export AKAMAI_HOST="akab-h05tnam3wl42son7nktnlnnx-kbob3i3v.luna.akamaiapis.net"
-export AKAMAI_CLIENT_TOKEN="akab-c113ntt0k3n4qtari252bfyqjkq-kkeh5a"
-export AKAMAI_CLIENT_SECRET="C113nt533KR3TN6N90yVuAgICxIRwsObLi0E67/N8eRN="
-export AKAMAI_ACCESS_TOKEN="akab-acc35t0k3nodujqunph3w7hzp7-gtm6ij"
+export AKAMAI_HOST="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx.luna.akamaiapis.net"
+export AKAMAI_CLIENT_TOKEN="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+export AKAMAI_CLIENT_SECRET="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="
+export AKAMAI_ACCESS_TOKEN="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
 
 # For custom section (e.g., staging)
-export AKAMAI_STAGING_HOST="..."
-export AKAMAI_STAGING_CLIENT_TOKEN="..."
-# etc.
+export AKAMAI_STAGING_HOST="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx.staging.akamaiapis.net"
+export AKAMAI_STAGING_CLIENT_TOKEN="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+export AKAMAI_STAGING_CLIENT_SECRET="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx="
+export AKAMAI_STAGING_ACCESS_TOKEN="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
 ```
 
 ### Programmatic Configuration
 
 ```rust
-use akamai_edgegrid::{EdgeGridClient, EdgeGridConfig};
+use edgegrid::{EdgeGridClient, EdgeGridConfig};
 
 let config = EdgeGridConfig::new(
     "client-token".to_string(),
@@ -181,7 +182,7 @@ println!("Property: {} ({})", property.property_name, property.property_id);
 The library provides comprehensive error handling through the `EdgeGridError` enum:
 
 ```rust
-use akamai_edgegrid::{EdgeGridError, EdgeGridClient};
+use edgegrid::{EdgeGridError, EdgeGridClient};
 
 match EdgeGridClient::from_edgerc("~/.edgerc", "default") {
     Ok(client) => { /* use client */ },
