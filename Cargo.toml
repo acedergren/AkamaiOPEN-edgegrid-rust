@@ -3,9 +3,12 @@ name = "akamai-edgegrid"
 version = "0.1.0"
 edition = "2021"
 authors = ["Community Contributors"]
-description = "Community-maintained Akamai EdgeGrid authentication for Rust"
+description = "Community-maintained Akamai EdgeGrid authentication for Rust. Provides a simple way to make authenticated HTTP requests to Akamai APIs using the EdgeGrid authentication scheme."
 license = "Apache-2.0"
 repository = "https://github.com/acedergren/AkamaiOPEN-edgegrid-rust"
+homepage = "https://github.com/acedergren/AkamaiOPEN-edgegrid-rust"
+documentation = "https://acedergren.github.io/AkamaiOPEN-edgegrid-rust"
+readme = "README.md"
 keywords = ["akamai", "edgegrid", "authentication", "api", "http"]
 categories = ["authentication", "web-programming", "api-bindings"]
 

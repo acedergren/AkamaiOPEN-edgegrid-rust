@@ -1,5 +1,10 @@
 # Akamai EdgeGrid Authentication for Rust
 
+[![Crates.io](https://img.shields.io/crates/v/akamai-edgegrid.svg)](https://crates.io/crates/akamai-edgegrid)
+[![Documentation](https://docs.rs/akamai-edgegrid/badge.svg)](https://docs.rs/akamai-edgegrid)
+[![CI Status](https://github.com/acedergren/AkamaiOPEN-edgegrid-rust/workflows/Rust%20CI/badge.svg)](https://github.com/acedergren/AkamaiOPEN-edgegrid-rust/actions)
+[![License](https://img.shields.io/crates/l/akamai-edgegrid.svg)](https://github.com/acedergren/AkamaiOPEN-edgegrid-rust/blob/main/LICENSE)
+
 A Rust implementation of the Akamai EdgeGrid authentication scheme, providing a simple way to make authenticated HTTP requests to Akamai APIs.
 
 > **⚠️ IMPORTANT: Community Project**
