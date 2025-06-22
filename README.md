@@ -32,14 +32,14 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-edgegrid = "0.1.0"
+akamai-edgegrid = "0.1.0"
 tokio = { version = "1", features = ["full"] }
 ```
 
 ## Quick Start
 
 ```rust
-use edgegrid::EdgeGridClient;
+use akamai_edgegrid::EdgeGridClient;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -101,7 +101,7 @@ export AKAMAI_STAGING_ACCESS_TOKEN="akab-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
 ### Programmatic Configuration
 
 ```rust
-use edgegrid::{EdgeGridClient, EdgeGridConfig};
+use akamai_edgegrid::{EdgeGridClient, EdgeGridConfig};
 
 let config = EdgeGridConfig::new(
     "client-token".to_string(),
@@ -182,7 +182,7 @@ println!("Property: {} ({})", property.property_name, property.property_id);
 The library provides comprehensive error handling through the `EdgeGridError` enum:
 
 ```rust
-use edgegrid::{EdgeGridError, EdgeGridClient};
+use akamai_edgegrid::{EdgeGridError, EdgeGridClient};
 
 match EdgeGridClient::from_edgerc("~/.edgerc", "default") {
     Ok(client) => { /* use client */ },

@@ -6,7 +6,7 @@
 //! ## Quick Start
 //!
 //! ```rust,no_run
-//! use edgegrid::{EdgeGridClient, EdgeGridConfig};
+//! use akamai_edgegrid::{EdgeGridClient, EdgeGridConfig};
 //!
 //! #[tokio::main]
 //! async fn main() -> Result<(), Box<dyn std::error::Error>> {
