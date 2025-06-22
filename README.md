@@ -2,6 +2,18 @@
 
 A Rust implementation of the Akamai EdgeGrid authentication scheme, providing a simple way to make authenticated HTTP requests to Akamai APIs.
 
+> **⚠️ IMPORTANT: Community Project**
+> 
+> This is a **community-created** Rust implementation of the EdgeGrid authentication protocol. This project is **NOT** officially supported, endorsed, or affiliated with Akamai Technologies. It is maintained by the open source community.
+>
+> For official Akamai-supported libraries, please refer to:
+> - [Node.js](https://github.com/akamai/AkamaiOPEN-edgegrid-node)
+> - [Python](https://github.com/akamai/AkamaiOPEN-edgegrid-python)
+> - [Java](https://github.com/akamai/AkamaiOPEN-edgegrid-java)
+> - [Go](https://github.com/akamai/AkamaiOPEN-edgegrid-golang)
+>
+> Use this library at your own risk. For production use cases requiring official support, please use one of the officially supported libraries listed above.
+
 ## Features
 
 - Full EdgeGrid authentication protocol implementation
@@ -212,3 +224,9 @@ This project is licensed under the Apache License 2.0 - see the LICENSE file for
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Disclaimer
+
+This is an independent project and is not affiliated with, officially maintained, authorized, endorsed, or sponsored by Akamai Technologies or any of its affiliates. Akamai is a registered trademark of Akamai Technologies, Inc. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+
+The authors and contributors of this project are not responsible for any damages or issues that may arise from using this library. Users should thoroughly test this implementation before using it in any production environment.
