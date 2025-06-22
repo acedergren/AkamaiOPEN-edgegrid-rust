@@ -231,3 +231,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This is an independent project and is not affiliated with, officially maintained, authorized, endorsed, or sponsored by Akamai Technologies or any of its affiliates. Akamai is a registered trademark of Akamai Technologies, Inc. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
 
 The authors and contributors of this project are not responsible for any damages or issues that may arise from using this library. Users should thoroughly test this implementation before using it in any production environment.
+
+## Authors
+
+This Rust implementation was created by:
+- **Alexander Cedergren** and **Claude (Anthropic AI Assistant)**
+
+For questions or feedback about this community project, you can reach out to: rust@solutionsedge.io
+
+**Please note:** This contact is provided as a courtesy for community discussion only. This project comes with NO support, warranties, or guarantees of any kind. Use at your own risk.
