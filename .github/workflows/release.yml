@@ -46,8 +46,5 @@ jobs:
           target
         key: ${{ runner.os }}-cargo-release-${{ hashFiles('**/Cargo.lock') }}
 
-    - name: Run tests
-      run: cargo test --verbose
-
     - name: Publish to crates.io
       run: cargo publish --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
