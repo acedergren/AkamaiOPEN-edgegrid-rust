@@ -1,0 +1,63 @@
+[package]
+name = "akamai-edgegrid"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "Akamai EdgeGrid authentication for Rust"
+license = "Apache-2.0"
+repository = "https://github.com/akamai/edgegrid-rust"
+keywords = ["akamai", "edgegrid", "authentication", "api"]
+categories = ["authentication", "web-programming"]
+
+[dependencies]
+# HTTP client
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Cryptography
+sha2 = "0.10"
+hmac = "0.12"
+base64 = "0.21"
+# URL handling
+url = "2.5"
+# UUID generation
+uuid = { version = "1.6", features = ["v4"] }
+# Time handling
+chrono = "0.4"
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+# Logging
+log = "0.4"
+# Configuration file parsing
+toml = "0.8"
+serde_yaml = "0.9"
+# Environment variables
+dotenv = "0.15"
+# Home directory
+dirs = "5.0"
+
+[dev-dependencies]
+# Testing
+mockito = "1.2"
+tokio-test = "0.4"
+pretty_assertions = "1.4"
+tempfile = "3.8"
+# Logging for tests
+env_logger = "0.10"
+
+[features]
+default = ["rustls"]
+rustls = ["reqwest/rustls-tls"]
+native-tls = ["reqwest/native-tls"]
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[[example]]
+name = "from_edgerc"
+path = "examples/from_edgerc.rs"

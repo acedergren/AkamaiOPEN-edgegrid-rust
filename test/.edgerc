@@ -1,0 +1,12 @@
+[default]
+client_secret = abcdefghijklmnopqrstuvwxyz1234567890ABCDEFG=
+host = akab-XXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXX.luna.akamaiapis.net
+access_token = akab-XXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXX
+client_token = akab-XXXXXXXXXXXXXXXX-XXXXXXXXXXXXXXXX
+
+[test]
+client_secret = test-secret-value
+host = test.luna.akamaiapis.net
+access_token = test-access-token
+client_token = test-client-token
+max_body = 2048
