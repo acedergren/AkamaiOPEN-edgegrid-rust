@@ -36,7 +36,7 @@ anyhow = "1.0"
 # Logging
 log = "0.4"
 # Configuration file parsing
-toml = "0.8"
+toml = "0.9"
 serde_yaml = "0.9"
 # Environment variables
 dotenv = "0.15"
