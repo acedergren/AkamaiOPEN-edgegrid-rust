@@ -14,7 +14,7 @@ categories = ["authentication", "web-programming", "api-bindings"]
 
 [dependencies]
 # HTTP client
-reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls"] }
 # Async runtime
 tokio = { version = "1", features = ["full"] }
 # Serialization
@@ -23,7 +23,7 @@ serde_json = "1.0"
 # Cryptography
 sha2 = "0.10"
 hmac = "0.12"
-base64 = "0.21"
+base64 = "0.22"
 # URL handling
 url = "2.5"
 # UUID generation
@@ -31,17 +31,16 @@ uuid = { version = "1.6", features = ["v4"] }
 # Time handling
 chrono = "0.4"
 # Error handling
-thiserror = "1.0"
+thiserror = "2.0"
 anyhow = "1.0"
 # Logging
 log = "0.4"
 # Configuration file parsing
-toml = "0.8"
-serde_yaml = "0.9"
+toml = "0.9"
 # Environment variables
 dotenv = "0.15"
 # Home directory
-dirs = "5.0"
+dirs = "6.0"
 
 [dev-dependencies]
 # Testing
@@ -50,7 +49,7 @@ tokio-test = "0.4"
 pretty_assertions = "1.4"
 tempfile = "3.8"
 # Logging for tests
-env_logger = "0.10"
+env_logger = "0.11"
 
 [features]
 default = ["rustls"]
